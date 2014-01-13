@@ -1,19 +1,15 @@
-
-/* Author: Tilo Mitra
+/* Author: YOUR NAME HERE
 */
 
-YUI().use('node', function (Y) {
-	//Remove all socket related code if you don't want socket.io
-    var socket      = io.connect(),
-        sender      = Y.one("#sender"),
-        receiver    = Y.one("#receiver");
+$(document).ready(function() {   
 
-    sender.on('click', function (e) {
-        socket.emit('message', 'Message Sent on ' + new Date());
-    });
+  var socket = io.connect();
 
-    socket.on('server_message', function(data){
-     receiver.append('<li>' + data + '</li>');  
-    });
+  $('#sender').bind('click', function() {
+   socket.emit('message', 'Message Sent on ' + new Date());     
+  });
 
+  socket.on('app_message', function(data){
+   $('#receiver').append('<li>' + data + '</li>');  
+  });
 });
