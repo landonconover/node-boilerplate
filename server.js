@@ -1,6 +1,5 @@
 //setup Dependencies
 var http    = require('http'),
-    fs      = require('fs'),
     connect = require('connect'),
     express = require('express'),
     exphbs  = require('express3-handlebars'),

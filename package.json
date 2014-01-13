@@ -1,13 +1,15 @@
 {
   "name": "YOUR-PROJECT-NAME-HERE",
   "description": "YOUR PROJECT DESCRIPTION HERE",
-  "author": "Tilo Mitra <tilomitra@gmail.com>",
+  "author": "Landon Conover <landon.conover@gmail.com>",
   "version": "1.0.0",
   "dependencies": {
     "express": "3.x",
     "socket.io": "0.8.x",
     "express3-handlebars": "0.4.1",
-    "express-state": "~1.0.0"
+    "express-state": "~1.0.0",
+    "connect": "2.12.0",
+    "mongoose": "3.8.4"
   },
   "devDependencies": {
     "vows": "0.5.x",
