@@ -16,13 +16,12 @@ Currently, the differences are:
 
 * Uses [Express 3.x](https://github.com/visionmedia/express/wiki/Migrating-from-2.x-to-3.x) as opposed to 2.x
 * Uses Handlebars [(express3-handlebars)](https://github.com/ericf/express3-handlebars) instead of Jade
-* Uses [YUI](http://yuilibrary.com) instead of jQuery on the client (although you can change this in 2 lines of code)
 * Uses [express-state](https://github.com/yahoo/express-state) to expose data from the server to the client. 
 
 To run the boilerplate template app:
 
 ```shell
-    $ git clone github.com/tilomitra/node-boilerplate/ <your-app-folder-name>
+    $ git clone github.com/landonconover/node-boilerplate/ <your-app-folder-name>
     $ npm install
     $ npm start
 ```
@@ -33,7 +32,7 @@ Go to [http://localhost:8000](http://localhost:8000) and click on the send messa
 
 If you don't need Socket.io, then just get rid of the socket.io calls from `server.js`, remove the client-side code in `script.js`, and the socket.io client-side library that exists in `layouts/main.handlebars`.
 
-### Want to use jQuery or another front-end library?
+### Want to use YUI or another front-end library?
 
 Just go into `main.handlebars` and add the library that you want. Then, you can modify `script.js` with your custom JavaScript code. 
 
