@@ -70,12 +70,6 @@ app.get('/', function (req, res, next) {
     });
 });
 
-app.get('/tool/:id', function (req, res, next) {
-    res.render('empTool',{
-      pageTitle: "Employee Tool",
-      empId: req.params.id
-    });
-});
 
 //A Route for Creating a 500 Error (Useful to keep around)
 app.get('/500', function(req, res){
