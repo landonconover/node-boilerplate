@@ -22,7 +22,7 @@ Currently, the differences are:
 To run the boilerplate template app:
 
 ```shell
-    $ git clone github.com/landonconover/node-boilerplate/ <your-app-folder-name>
+    $ git clone https://github.com/landonconover/node-boilerplate.git <your-app-folder-name>
     $ npm install
     $ nodemon server.js (Requires [Nodemon](https://github.com/remy/nodemon))
 ```
