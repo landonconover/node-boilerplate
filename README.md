@@ -17,6 +17,7 @@ Currently, the differences are:
 * Uses [Express 3.x](https://github.com/visionmedia/express/wiki/Migrating-from-2.x-to-3.x) as opposed to 2.x
 * Uses Handlebars [(express3-handlebars)](https://github.com/ericf/express3-handlebars) instead of Jade
 * Uses [express-state](https://github.com/yahoo/express-state) to expose data from the server to the client. 
+* Uses [Twitter Bootstrap](https://github.com/twbs/bootstrap) for css. 
 
 To run the boilerplate template app:
 
