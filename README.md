@@ -24,7 +24,7 @@ To run the boilerplate template app:
 ```shell
     $ git clone github.com/landonconover/node-boilerplate/ <your-app-folder-name>
     $ npm install
-    $ npm start
+    $ nodemon server.js (Requires [Nodemon](https://github.com/remy/nodemon))
 ```
 
 Go to [http://localhost:8000](http://localhost:8000) and click on the send message link to see socket.io in action.
