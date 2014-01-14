@@ -65,7 +65,16 @@ io.sockets.on('connection', function(socket){
 
 /////// ADD ALL YOUR ROUTES HERE  /////////
 app.get('/', function (req, res, next) {
-    res.render('home');
+    res.render('home',{
+      pageTitle: "Hello There"
+    });
+});
+
+app.get('/tool/:id', function (req, res, next) {
+    res.render('empTool',{
+      pageTitle: "Employee Tool",
+      empId: req.params.id
+    });
 });
 
 //A Route for Creating a 500 Error (Useful to keep around)

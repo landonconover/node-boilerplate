@@ -9,6 +9,7 @@ $(document).ready(function() {
    socket.emit('message', 'Message Sent on ' + new Date());     
   });
 
+
   socket.on('app_message', function(data){
    $('#receiver').append('<li>' + data + '</li>');  
   });
